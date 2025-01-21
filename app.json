@@ -1,28 +1,64 @@
 {
   "expo": {
-    "name": "FIKISHWA_APP",
-    "slug": "FIKISHWA_APP",
+    "name": "fikishwa-new",
+    "slug": "fikishwa-new",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "newArchEnabled": true,
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/images/icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#2F80ED"
     },
     "ios": {
       "supportsTablet": true
     },
     "android": {
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyA5tg2gPu-u2dKFmcvi7UkEbdw7G_d0Ybk"
+        }
+      },
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
+      },
+      "package": "com.hiuhu.fikishwanew"
+    },
+     "package": "com.fikishwaconnections.fikishwa",
+    "web": {
+      "bundler": "metro",
+      "output": "server",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://uber.dev/"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": "https://uber.dev/"
+      },
+      "eas": {
+        "projectId": "b15b2410-667c-4446-baad-771abb3235f0"
       }
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "runtimeVersion": "1.0.0",
+    "updates": {
+      "url": "https://u.expo.dev/b15b2410-667c-4446-baad-771abb3235f0"
     }
   }
 }
